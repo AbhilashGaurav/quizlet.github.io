@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css for choice.css" > 
+    <style>
+        .choice{
+            padding-block-start: 1mm;
+                }
+        .imp{
+            width:290px;
+            height:240px;
+            background-image:none;
+            background-color: cadetblue;
+            margin-right: 10mm;
+            margin-left: 10mm;
+            border-color: rgb(8, 130, 252);
+            font-size:40px;
+          }
+        #she{
+          border-radius: 10px;
+           
+          width:250px;
+          height:50px;
+          color:blueviolet;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 25px;
+        }
+        #sw{
+          width:150px;
+          height:50px; 
+          font-size: 30px;
+          margin:20px;
+        }
+
+    </style>
+    <title>quiz</title>
+</head>
+<body background="back11.gif">
+
+    <font align="center" size=20>
+    <p id="countdown">0:00</p></font>
+    <font size="6" color="white">  
+        <div class="choice">
+            1.What does the colour of star indicates? <br><br>
+              <button class="imp" id="ch1" onclick="lock('ch1')" onmouseenter="menter('ch1')" onmouseleave="mleave('ch1')">Distance from the Sun</button>
+              <button class="imp" id="ch2"onclick="lock('ch2')" onmouseenter="menter('ch2')" onmouseleave="mleave('ch2')">Lighting or glow</button>
+              <button class="imp" id="ch3"onclick="lock('ch3')" onmouseenter="menter('ch3')" onmouseleave="mleave('ch3')">Distance from the earth</button>
+              <button class="imp" id="ch4"onclick="lock('ch4','yes')" onmouseenter="menter('ch4')" onmouseleave="mleave('ch4')">Temperature </button></div>
+            <div class="choice">
+                2. Which is the brightest star outside the Solar System? <br><br>
+                <button class="imp" id="ch11" onclick="lock('ch11','yes')" onmouseenter="menter('ch11')" onmouseleave="mleave('ch11')">Sirius</button>
+              <button class="imp" id="ch12"onclick="lock('ch12')" onmouseenter="menter('ch12')" onmouseleave="mleave('ch12')">Proxima Centauri</button>
+              <button class="imp" id="ch13"onclick="lock('ch13')" onmouseenter="menter('ch13')" onmouseleave="mleave('ch13')">Alpha Centauri</button>
+              <button class="imp" id="ch14"onclick="lock('ch14')" onmouseenter="menter('ch14')" onmouseleave="mleave('ch14')">Beta Centaury</button></div>
+            </div>
+            <div class="choice">
+                3..”Electra Gold Cup” is associated with which sports?  <br><br>
+                <button class="imp" id="ch21" onclick="lock('ch21')" onmouseenter="menter('ch21')" onmouseleave="mleave('ch21')">Lawn Tennis</button>
+              <button class="imp" id="ch22"onclick="lock('ch22','yes')" onmouseenter="menter('ch22')" onmouseleave="mleave('ch22')">Table Tennis</button>
+              <button class="imp" id="ch23"onclick="lock('ch23')" onmouseenter="menter('ch23')" onmouseleave="mleave('ch23')">Badminton</button>
+              <button class="imp" id="ch24"onclick="lock('ch24')" onmouseenter="menter('ch24')" onmouseleave="mleave('ch24')">Football</button></div>
+            </div>
+            <div class="choice">
+                4.Who among the following is the first Indian to score a century in Indian Premier League (IPL)?   <br><br>
+                <button class="imp" id="ch31" onclick="lock('ch31')" onmouseenter="menter('ch31')" onmouseleave="mleave('ch31')">Gautam Gambhir</button>
+                <button class="imp" id="ch32"onclick="lock('ch32','yes')" onmouseenter="menter('ch32')" onmouseleave="mleave('ch32')">Manish Pandey</button>
+                <button class="imp" id="ch33"onclick="lock('ch33')" onmouseenter="menter('ch33')" onmouseleave="mleave('ch33')">Sachin</button>
+                <button class="imp" id="ch34"onclick="lock('ch34')" onmouseenter="menter('ch34')" onmouseleave="mleave('ch34')">Rahul Dravid</button></div>
+            </div>
+        
+            <div class="choice">
+               5. Who invented X-Ray?  <br><br>
+               <button class="imp" id="ch41" onclick="lock('ch41','yes')" onmouseenter="menter('ch41')" onmouseleave="mleave('ch41')">Rontgen</button>
+             <button class="imp" id="ch42"onclick="lock('ch42')" onmouseenter="menter('ch42')" onmouseleave="mleave('ch42')">Alexander</button>
+             <button class="imp" id="ch43"onclick="lock('ch43')" onmouseenter="menter('ch43')" onmouseleave="mleave('ch43')">Jagadish Chandrabose</button>
+             <button class="imp" id="ch44"onclick="lock('ch44')" onmouseenter="menter('ch44')" onmouseleave="mleave('ch44')">Ismark</button></div>
+           </div>
+           <div class="choice">
+            6. Who invented Penicillin ?  <br><br>
+            <button class="imp" id="ch51" onclick="lock('ch51')" onmouseenter="menter('ch51')" onmouseleave="mleave('ch51')">Robert Koch</button>
+            <button class="imp" id="ch52"onclick="lock('ch52')" onmouseenter="menter('ch52')" onmouseleave="mleave('ch52')">James Stalk </button>
+            <button class="imp" id="ch53"onclick="lock('ch53','yes')" onmouseenter="menter('ch53')" onmouseleave="mleave('ch53')">Alexander Fleming</button>
+            <button class="imp" id="ch54"onclick="lock('ch54',)" onmouseenter="menter('ch54')" onmouseleave="mleave('ch54')">Johan E Salk</button></div>
+            </div>    
+            <div class="choice">
+                7.Which of the following newspaper was started by  Annie Besant?  <br><br>
+            <button class="imp" id="ch61" onclick="lock('ch61')" onmouseenter="menter('ch61')" onmouseleave="mleave('ch61')">The Hindu</button>
+            <button class="imp" id="ch62"onclick="lock('ch62')" onmouseenter="menter('ch62')" onmouseleave="mleave('ch62')">Indian Express</button>
+            <button class="imp" id="ch63"onclick="lock('ch63')" onmouseenter="menter('ch63')" onmouseleave="mleave('ch63')">The Times of India</button>
+            <button class="imp" id="ch64"onclick="lock('ch64','yes')" onmouseenter="menter('ch64')" onmouseleave="mleave('ch64')">New India</button></div>
+            </div>
+            <div class="choice">
+               8. Who among the following was the real founder of the Aligarh Muslim University?  <br><br>
+              <button class="imp" id="ch71" onclick="lock('ch71')" onmouseenter="menter('ch71')" onmouseleave="mleave('ch71')">Nawab Salimullah</button>
+              <button class="imp" id="ch72"onclick="lock('ch72','yes')" onmouseenter="menter('ch72')" onmouseleave="mleave('ch72')">Syed Ahmad Khan</button>
+              <button class="imp" id="ch73"onclick="lock('ch73')" onmouseenter="menter('ch73')" onmouseleave="mleave('ch73')">Abul Kalam Azad</button>
+              <button class="imp" id="ch74"onclick="lock('ch74')" onmouseenter="menter('ch74')" onmouseleave="mleave('ch74')">Muhhammed Ali Jinnah </button></div>
+              </div>
+              <div class="choice">
+              9.What is the full form of "ISRO"?  <br><br>
+              <button class="imp" id="ch81" onclick="lock('ch81')" onmouseenter="menter('ch81')" onmouseleave="mleave('ch81')">Indian Satellite Research Organisation</button>
+              <button class="imp" id="ch82"onclick="lock('ch82')" onmouseenter="menter('ch82')" onmouseleave="mleave('ch82')">Indian Solar Research Organisation</button>
+              <button class="imp" id="ch83"onclick="lock('ch83')" onmouseenter="menter('ch83')" onmouseleave="mleave('ch83')">Indian Site Research Organisation</button>
+              <button class="imp" id="ch84"onclick="lock('ch84','yes')" onmouseenter="menter('ch84')" onmouseleave="mleave('ch84')"> Indian Space Research Organisation </button></div>
+              </div>
+              <div class="choice">
+                10.Who is father of geometry?  <br><br>
+              <button class="imp" id="ch91" onclick="lock('ch91')" onmouseenter="menter('ch91')" onmouseleave="mleave('ch91')">Aristotle</button>
+              <button class="imp" id="ch92"onclick="lock('ch92','yes')" onmouseenter="menter('ch92')" onmouseleave="mleave('ch92')">Euclid</button>
+              <button class="imp" id="ch93"onclick="lock('ch93')" onmouseenter="menter('ch93')" onmouseleave="mleave('ch93')">Kepler</button>
+              <button class="imp" id="ch94"onclick="lock('ch94')" onmouseenter="menter('ch94')" onmouseleave="mleave('ch94')">Pythagoras</button></div>
+              </div>     
+    </font>
+<center>
+    <button onclick="show()" id='h'>Next</button>          
+    <button onclick="score()" id="f">Submit</button>  
+    <div class="total score">
+      <form action="http://localhost/cwa/php.php" method="get" name="form">
+      <input type="text" value="none" name="data" id="he">
+    <br>
+    
+      <input type="text" placeholder="Type Your Name" id="she" name="beta">
+        <input type="submit" value="Scores" id="sw">
+      </form>
+    </div>       
+</center>
+<script src="quiz.js"> 
+</script>
+</body>
+</html>

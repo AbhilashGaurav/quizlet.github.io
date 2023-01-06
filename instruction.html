@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .ins{
+            margin-top: 50px;
+            margin-left:450px;
+            margin-right: 300px;
+            font-size: 20px;
+            color:black;
+            background-color:white;          
+            border-radius: 50px;
+            padding:20px;
+            padding-bottom: 3px;
+        }
+        #li{
+            border-radius: 50px;
+            padding:10px;
+            background-color: rgb(226, 168, 43);
+            margin-left:600px;
+            margin-right: 455px;
+            margin-top: 50px;
+            color:white;
+        }
+        .read{
+            margin-top: 50px;
+            margin-left: 600px;
+            font-size:25px;
+        }
+        #box{
+            width:25px;
+            height:25px;
+        }
+        #but{
+            border-radius: 5px;
+            margin-left:250px;
+            font-size:25px
+        }
+
+    </style>
+    <title>Instruction</title>
+</head>
+<body background="image.png">
+    <h1 id="li"><u>
+      Instruction cum code of conduct </u></h1>
+    <div class="ins">
+
+<pre>
+01] After selecting the subject of the quiz, the user will be shown  
+    10 questions one question at a time on screen.The next question 
+    will be shown only when the current question is marked and once
+    the question is marked the user cannot go back.
+
+02] Clock timer will run on top and the maximum timing is given to 
+    the player after which the test will be submited.
+
+03] Once a user marks the answer the correct answer tile will be 
+    Blue in colour and the wrong answer tile will be Red in colour.
+
+04] If the user skipped one question and entered the next button 
+    then the user will be allowed to select 2 options in the next
+    question and vice versa.
+    
+05] At the end number of correct questions and the time will be 
+    recorded and this will be the criteria of ranking of the leader
+    board.</pre>
+</div>
+<div class="read">
+    <input type="checkbox" id="box"> <font color="white">I read it.</font> 
+    <button  onclick="next()" id="but">Proceed</button>
+</div>
+<script>
+    function next(){
+        if (document.getElementById("box").checked==true){
+            window.location.href="index.html";
+        }       
+    }
+</script>
+</body>
+</html>

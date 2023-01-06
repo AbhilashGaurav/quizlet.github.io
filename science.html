@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css for choice.css" > 
+    <style>
+        .choice{
+            padding-block-start: 1mm;
+                }
+        .imp{
+            width:290px;
+            height:240px;
+            background-image:none;
+            background-color: cadetblue;
+            margin-right: 10mm;
+            margin-left: 10mm;
+            border-color: rgb(8, 130, 252);
+            font-size:40px;
+          }
+        #she{
+          border-radius: 10px;
+           
+          width:250px;
+          height:50px;
+          color:blueviolet;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 30px;
+        }
+        #sw{
+          width:150px;
+          height:50px; 
+          font-size: 30px;
+          margin:20px;
+        }
+
+    </style>
+    <title>quiz</title>
+</head>
+<body background="back11.gif">
+
+    <font align="center" size=20>
+    <p id="countdown">0:00</p></font>
+    <font size="6" color="white">  
+   <div class="choice">
+    1. The working principle of a washing machine is <br><br>
+      <button class="imp" id="ch1" onclick="lock('ch1')" onmouseenter="menter('ch1')" onmouseleave="mleave('ch1')">reverse osmosis </button>
+      <button class="imp" id="ch2"onclick="lock('ch2')" onmouseenter="menter('ch2')" onmouseleave="mleave('ch2')">diffusion</button>
+      <button class="imp" id="ch3"onclick="lock('ch3','yes')" onmouseenter="menter('ch3')" onmouseleave="mleave('ch3')">centrifugation</button>
+      <button class="imp" id="ch4"onclick="lock('ch4')" onmouseenter="menter('ch4')" onmouseleave="mleave('ch4')">dialysis</button></div>
+    <div class="choice">
+        2. Nuclear sizes are expressed in a unit named <br><br>
+        <button class="imp" id="ch11" onclick="lock('ch11','yes')" onmouseenter="menter('ch11')" onmouseleave="mleave('ch11')">Fermi</button>
+      <button class="imp" id="ch12"onclick="lock('ch12')" onmouseenter="menter('ch12')" onmouseleave="mleave('ch12')">Angstrom</button>
+      <button class="imp" id="ch13"onclick="lock('ch13')" onmouseenter="menter('ch13')" onmouseleave="mleave('ch13')">Newton</button>
+      <button class="imp" id="ch14"onclick="lock('ch14')" onmouseenter="menter('ch14')" onmouseleave="mleave('ch14')">Tesla</button></div>
+    </div>
+    <div class="choice">
+        3.What is water gas? <br><br>
+        <button class="imp" id="ch21" onclick="lock('ch21','yes')" onmouseenter="menter('ch21')" onmouseleave="mleave('ch21')">mixture of CO and H2 </button>
+      <button class="imp" id="ch22"onclick="lock('ch22')" onmouseenter="menter('ch22')" onmouseleave="mleave('ch22')">mixture of CO and H2O </button>
+      <button class="imp" id="ch23"onclick="lock('ch23')" onmouseenter="menter('ch23')" onmouseleave="mleave('ch23')">mixture of CO2 and H2 </button>
+      <button class="imp" id="ch24"onclick="lock('ch24')" onmouseenter="menter('ch24')" onmouseleave="mleave('ch24')">Carbon mono-oxide </button></div>
+    </div>
+    <div class="choice">
+        4. Which of the following was discovered in Milikan’s oil drop experiment? <br><br>
+        <button class="imp" id="ch31" onclick="lock('ch31')" onmouseenter="menter('ch31')" onmouseleave="mleave('ch31')">Charge on a proton </button>
+        <button class="imp" id="ch32"onclick="lock('ch32','yes')" onmouseenter="menter('ch32')" onmouseleave="mleave('ch32')">Charge on an electron </button>
+        <button class="imp" id="ch33"onclick="lock('ch33')" onmouseenter="menter('ch33')" onmouseleave="mleave('ch33')">Charge to mass ratio of an electron </button>
+        <button class="imp" id="ch34"onclick="lock('ch34')" onmouseenter="menter('ch34')" onmouseleave="mleave('ch34')">Mass of a Hydrogen atom </button></div>
+    </div>
+
+    <div class="choice">
+       5. Which of the following is the formula of cell constant?  <br><br>
+       <button class="imp" id="ch41" onclick="lock('ch41')" onmouseenter="menter('ch41')" onmouseleave="mleave('ch41')">length/2 x Area </button>
+     <button class="imp" id="ch42"onclick="lock('ch42','yes')" onmouseenter="menter('ch42')" onmouseleave="mleave('ch42')">length/Area </button>
+     <button class="imp" id="ch43"onclick="lock('ch43')" onmouseenter="menter('ch43')" onmouseleave="mleave('ch43')">2 x length/Area </button>
+     <button class="imp" id="ch44"onclick="lock('ch44')" onmouseenter="menter('ch44')" onmouseleave="mleave('ch44')">[D]length x Area </button></div>
+   </div>
+   <div class="choice">
+    6. What is the Gibbs energy of a cell (nF=amount of charge passed, E= EMF of the cell)? <br><br>
+    <button class="imp" id="ch51" onclick="lock('ch51')" onmouseenter="menter('ch51')" onmouseleave="mleave('ch51')">-1/2nFE </button>
+    <button class="imp" id="ch52"onclick="lock('ch52')" onmouseenter="menter('ch52')" onmouseleave="mleave('ch52')">2nFE </button>
+    <button class="imp" id="ch53"onclick="lock('ch53','yes')" onmouseenter="menter('ch53')" onmouseleave="mleave('ch53')">-nFE </button>
+    <button class="imp" id="ch54"onclick="lock('ch54',)" onmouseenter="menter('ch54')" onmouseleave="mleave('ch54')">nFE </button></div>
+    </div>    
+    <div class="choice">
+        7. Which of the following Kingdom represents bacteria?  <br><br>
+    <button class="imp" id="ch61" onclick="lock('ch61','yes')" onmouseenter="menter('ch61')" onmouseleave="mleave('ch61')">Monera</button>
+    <button class="imp" id="ch62"onclick="lock('ch62')" onmouseenter="menter('ch62')" onmouseleave="mleave('ch62')">Protista </button>
+    <button class="imp" id="ch63"onclick="lock('ch63')" onmouseenter="menter('ch63')" onmouseleave="mleave('ch63')">Protozoa </button>
+    <button class="imp" id="ch64"onclick="lock('ch64')" onmouseenter="menter('ch64')" onmouseleave="mleave('ch64')">Metazoa</button></div>
+    </div>
+    <div class="choice">
+       8. Which among the following is not an Enzyme?  <br><br>
+      <button class="imp" id="ch71" onclick="lock('ch71','yes')" onmouseenter="menter('ch71')" onmouseleave="mleave('ch71')">Gastrin</button>
+      <button class="imp" id="ch72"onclick="lock('ch72')" onmouseenter="menter('ch72')" onmouseleave="mleave('ch72')">Ptyalin</button>
+      <button class="imp" id="ch73"onclick="lock('ch73')" onmouseenter="menter('ch73')" onmouseleave="mleave('ch73')">Pepsin</button>
+      <button class="imp" id="ch74"onclick="lock('ch74')" onmouseenter="menter('ch74')" onmouseleave="mleave('ch74')">Rennin</button></div>
+      </div>
+      <div class="choice">
+      9. Which among the following blood protein regulates the amount of water in plasma? <br><br>
+      <button class="imp" id="ch81" onclick="lock('ch81')" onmouseenter="menter('ch81')" onmouseleave="mleave('ch81')">Globulin </button>
+      <button class="imp" id="ch82"onclick="lock('ch82','yes')" onmouseenter="menter('ch82')" onmouseleave="mleave('ch82')">Albumin </button>
+      <button class="imp" id="ch83"onclick="lock('ch83')" onmouseenter="menter('ch83')" onmouseleave="mleave('ch83')">Fibrin </button>
+      <button class="imp" id="ch84"onclick="lock('ch84')" onmouseenter="menter('ch84')" onmouseleave="mleave('ch84')">Fibulin </button></div>
+      </div>
+      <div class="choice">
+        10. Which metal is found in liquid state at room temperature?  <br><br>
+      <button class="imp" id="ch91" onclick="lock('ch91','yes')" onmouseenter="menter('ch91')" onmouseleave="mleave('ch91')">Mercury</button>
+      <button class="imp" id="ch92"onclick="lock('ch92')" onmouseenter="menter('ch92')" onmouseleave="mleave('ch92')">Iron</button>
+      <button class="imp" id="ch93"onclick="lock('ch93')" onmouseenter="menter('ch93')" onmouseleave="mleave('ch93')">Zinc</button>
+      <button class="imp" id="ch94"onclick="lock('ch94')" onmouseenter="menter('ch94')" onmouseleave="mleave('ch94')">Aluminium</button></div>
+      </div>    
+    </font>
+<center>
+    <button onclick="show()" id='h'>Next</button>          
+    <button onclick="score()" id="f">Submit</button>  
+    <div class="total score">
+      <form action="http://localhost/cwa/php.php" method="get" name="form">
+      <input type="text" value="none" name="data" id="he">
+    <br>
+    
+      <input type="text" placeholder="Type Your Name" id="she" name="beta">
+        <input type="submit" value="Scores" id="sw">
+      </form>
+    </div>       
+</center>
+<script src="quiz.js"> 
+</script>
+</body>
+</html>

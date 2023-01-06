@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css for choice.css" > 
+    <style>
+        .choice{
+            padding-block-start: 1mm;
+                }
+        .imp{
+            width:290px;
+            height:240px;
+            background-image:none;
+            background-color: cadetblue;
+            margin-right: 10mm;
+            margin-left: 10mm;
+            border-color: rgb(8, 130, 252);
+            font-size:40px;
+        }
+        #she{
+          border-radius: 10px;
+           
+          width:250px;
+          height:50px;
+          color:blueviolet;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 30px;
+        }
+        #sw{
+          width:150px;
+          height:50px; 
+          font-size: 30px;
+          margin:20px;
+        }
+
+    </style>
+    <title>quiz</title>
+</head>
+<body background="back11.gif">
+
+    <font align="center" size=20>
+    <p id="countdown">0:00</p></font>
+    <font size="6" color="white">  
+        <div class="choice">
+            1.In general, the index of the first element in an array is ____  <br><br>
+              <button class="imp" id="ch1" onclick="lock('ch1','yes')" onmouseenter="menter('ch1')" onmouseleave="mleave('ch1')">0</button>
+              <button class="imp" id="ch2"onclick="lock('ch2')" onmouseenter="menter('ch2')" onmouseleave="mleave('ch2')">-1</button>
+              <button class="imp" id="ch3"onclick="lock('ch3')" onmouseenter="menter('ch3')" onmouseleave="mleave('ch3')">2</button>
+              <button class="imp" id="ch4"onclick="lock('ch4')" onmouseenter="menter('ch4')" onmouseleave="mleave('ch4')">1</button></div>
+            <div class="choice">
+                2.Process of inserting an element in stack is called ____  <br><br>
+              <button class="imp" id="ch11" onclick="lock('ch11')" onmouseenter="menter('ch11')" onmouseleave="mleave('ch11')">Create</button>
+              <button class="imp" id="ch12"onclick="lock('ch12','yes')" onmouseenter="menter('ch12')" onmouseleave="mleave('ch12')">Push</button>
+              <button class="imp" id="ch13"onclick="lock('ch13')" onmouseenter="menter('ch13')" onmouseleave="mleave('ch13')">Evaluation</button>
+              <button class="imp" id="ch14"onclick="lock('ch14')" onmouseenter="menter('ch14')" onmouseleave="mleave('ch14')">Pop</button></div>
+            </div>
+            <div class="choice">
+                3.Which of the following is not a search engine  <br><br>
+              <button class="imp" id="ch21" onclick="lock('ch21')" onmouseenter="menter('ch21')" onmouseleave="mleave('ch21')">Google</button>
+              <button class="imp" id="ch22"onclick="lock('ch22')" onmouseenter="menter('ch22')" onmouseleave="mleave('ch22')">Yahoo</button>
+              <button class="imp" id="ch23"onclick="lock('ch23','yes')" onmouseenter="menter('ch23')" onmouseleave="mleave('ch23')">Firefox Mozilla</button>
+              <button class="imp" id="ch24"onclick="lock('ch24')" onmouseenter="menter('ch24')" onmouseleave="mleave('ch24')">Altavista</button></div>
+            </div>
+            <div class="choice">
+                4. To access the services of operating system, the interface is provided by the _____ <br><br>
+                <button class="imp" id="ch31" onclick="lock('ch31','yes')" onmouseenter="menter('ch31')" onmouseleave="mleave('ch31')">System calls</button>
+                <button class="imp" id="ch32"onclick="lock('ch32')" onmouseenter="menter('ch32')" onmouseleave="mleave('ch32')">API</button>
+                <button class="imp" id="ch33"onclick="lock('ch33')" onmouseenter="menter('ch33')" onmouseleave="mleave('ch33')">Library</button>
+                <button class="imp" id="ch34"onclick="lock('ch34')" onmouseenter="menter('ch34')" onmouseleave="mleave('ch34')">Assembly instructions</button></div>
+            </div>
+        
+            <div class="choice">
+               5. All keywords in C are in ____   <br><br>
+               <button class="imp" id="ch41" onclick="lock('ch41','yes')" onmouseenter="menter('ch41')" onmouseleave="mleave('ch41')">LowerCase letters </button>
+             <button class="imp" id="ch42"onclick="lock('ch42')" onmouseenter="menter('ch42')" onmouseleave="mleave('ch42')">UpperCase letters</button>
+             <button class="imp" id="ch43"onclick="lock('ch43')" onmouseenter="menter('ch43')" onmouseleave="mleave('ch43')">CamelCase letters </button>
+             <button class="imp" id="ch44"onclick="lock('ch44')" onmouseenter="menter('ch44')" onmouseleave="mleave('ch44')">None of the mentioned</button></div>
+           </div>
+           <div class="choice">
+            6.What is the size of an int data type?  <br><br>
+            <button class="imp" id="ch51" onclick="lock('ch51')" onmouseenter="menter('ch51')" onmouseleave="mleave('ch51')">4 Bytes</button>
+            <button class="imp" id="ch52"onclick="lock('ch52')" onmouseenter="menter('ch52')" onmouseleave="mleave('ch52')">8 Bytes </button>
+            <button class="imp" id="ch53"onclick="lock('ch53','yes')" onmouseenter="menter('ch53')" onmouseleave="mleave('ch53')">Depends on the compiler</button>
+            <button class="imp" id="ch54"onclick="lock('ch54',)" onmouseenter="menter('ch54')" onmouseleave="mleave('ch54')">Cannot be determined</button></div>
+            </div>    
+            <div class="choice">
+                7.Which function is used to read a single character from the console in C++? <br><br>
+            <button class="imp" id="ch61" onclick="lock('ch61','yes')" onmouseenter="menter('ch61')" onmouseleave="mleave('ch61')">cin.get(ch)</button>
+            <button class="imp" id="ch62"onclick="lock('ch62')" onmouseenter="menter('ch62')" onmouseleave="mleave('ch62')">getline(ch)</button>
+            <button class="imp" id="ch63"onclick="lock('ch63')" onmouseenter="menter('ch63')" onmouseleave="mleave('ch63')">read(ch) </button>
+            <button class="imp" id="ch64"onclick="lock('ch64')" onmouseenter="menter('ch64')" onmouseleave="mleave('ch64')">scanf(ch)</button></div>
+            </div>
+            <div class="choice">
+               8.Who created C++? <br><br>
+              <button class="imp" id="ch71" onclick="lock('ch71','yes')" onmouseenter="menter('ch71')" onmouseleave="mleave('ch71')">Bjarne Stroustrup</button>
+              <button class="imp" id="ch72"onclick="lock('ch72')" onmouseenter="menter('ch72')" onmouseleave="mleave('ch72')">Dennis Ritchie</button>
+              <button class="imp" id="ch73"onclick="lock('ch73')" onmouseenter="menter('ch73')" onmouseleave="mleave('ch73')">Ken Thompson</button>
+              <button class="imp" id="ch74"onclick="lock('ch74')" onmouseenter="menter('ch74')" onmouseleave="mleave('ch74')">Brian Kernighan</button></div>
+              </div>
+              <div class="choice">
+              9.An inline function is expanded during ______  <br><br>
+              <button class="imp" id="ch81" onclick="lock('ch81','yes')" onmouseenter="menter('ch81')" onmouseleave="mleave('ch81')">compile-time</button>
+              <button class="imp" id="ch82"onclick="lock('ch82')" onmouseenter="menter('ch82')" onmouseleave="mleave('ch82')">run-time</button>
+              <button class="imp" id="ch83"onclick="lock('ch83')" onmouseenter="menter('ch83')" onmouseleave="mleave('ch83')">c)never expanded</button>
+              <button class="imp" id="ch84"onclick="lock('ch84')" onmouseenter="menter('ch84')" onmouseleave="mleave('ch84')">end of the program</button></div>
+              </div>
+              <div class="choice">
+                10. How many specifiers are present in access specifiers in class? <br><br>
+              <button class="imp" id="ch91" onclick="lock('ch91')" onmouseenter="menter('ch91')" onmouseleave="mleave('ch91')">1</button>
+              <button class="imp" id="ch92"onclick="lock('ch92')" onmouseenter="menter('ch92')" onmouseleave="mleave('ch92')">2</button>
+              <button class="imp" id="ch93"onclick="lock('ch93','yes')" onmouseenter="menter('ch93')" onmouseleave="mleave('ch93')">3</button>
+              <button class="imp" id="ch94"onclick="lock('ch94')" onmouseenter="menter('ch94')" onmouseleave="mleave('ch94')">4</button></div>
+              </div>
+    </font>
+<center>
+    <button onclick="show()" id='h'>Next</button>          
+    <button onclick="score()" id="f">Submit</button>  
+    <div class="total score">
+      <form action="http://localhost/cwa/php.php" method="get" name="form">
+      <input type="text" value="none" name="data" id="he">
+    <br>
+    
+      <input type="text" placeholder="Type Your Name" id="she" name="beta">
+        <input type="submit" value="Scores" id="sw">
+      </form>
+    </div>       
+</center>
+<script src="quiz.js"> 
+</script>
+</body>
+</html>

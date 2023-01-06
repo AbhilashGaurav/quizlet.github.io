@@ -1,0 +1,42 @@
+
+.imp{
+    align-self: center;
+    width: 270px;
+    height:270px;
+    border-width:2px ;
+    margin-top: 5mm;
+    margin-right: 15mm;
+    margin-left: 15mm;
+    margin-bottom: 5mm;
+    font-size: 40px;
+    font-family:cursive;
+    color:white;
+    background:url("backs1.gif");
+    border:4px solid rgb(226, 124, 226);
+    border-radius:50px;
+}
+
+/* this part is used in the quiz while playing the game */
+#h{
+    width:150px;
+    height:60px;
+    border:4px solid blue;
+    color:rgb(8, 8, 8);
+    background-color:white;
+    font-size:25px; 
+    border-radius:20px;    
+ }
+ #f{
+    width:150px;
+    height:60px;
+    border:4px solid blue;
+    color:ivory;
+    background-color:rgb(131, 130, 134);   
+    font-size:25px; 
+    border-radius:20px;    
+ }
+ #countdown{
+     color:rgb(247, 14, 14);
+     
+     background-color: ghostwhite;
+ }
