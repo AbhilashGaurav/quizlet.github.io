@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css for choice.css"/>
+    <style>
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  border-radius:10px;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(236, 11, 11);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:blue;
+  color: white;
+} 
+#q{
+    font-size:30px;
+    border-radius:50px;  
+    padding-left:500px;
+    padding-right:500px;
+    background-color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+}
+        </style>
+    <title>Document</title>
+</head>
+<body background="back11.gif">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="choice.html">Quiz</a>
+        <a href="http://localhost/cwa/leaderboard.php">Leader Board</a>
+        <a href="instruction.html">Instruction</a>
+        <a href="about.html">About</a>
+        <img id="img" src="back4.gif" width="100" style="border-radius:50%;position:relative;left:900px;top:0;"><img src="about.png"  width="50" height="50"style="position:absolute; left:1420px;top:30px; border-radius:50%;">
+    </div>
+    <center>
+<p id="q" style="position:absolute; top:50px;">Fastern your seat belt and select your QUIZ.
+</p>  
+    <div class="choice" >
+        <button class="imp" id="q1" onclick="navigate('new try for quiz.html')" onmouseenter="mouseenter('q1','resoning.wav')" onmouseleave="mouseleave('q1')"> Reasoning</button>
+    
+        <button class="imp"id="q2" onclick="navigate('science.html')"onmouseenter="mouseenter('q2','science.wav')" onmouseleave="mouseleave('q2')"> Science</button>
+    <br>
+         
+        <button class="imp" id="q3"onclick="navigate('gk.html')"onmouseenter="mouseenter('q3','gk.wav')" onmouseleave="mouseleave('q3')"> GK</button>
+    
+            <button class="imp"id="q4"onclick="navigate('cse.html')"onmouseenter="mouseenter('q4','cse.wav')" onmouseleave="mouseleave('q4')"> CSE</button></div></center>
+
+        <script>
+            function navigate(page){
+                window.location.href=page;
+            }
+            var snd=new Audio();
+            function mouseenter(y,q){
+                snd.src=q;
+                snd.play();
+               document.getElementById(y).style.borderWidth="8px";
+               document.getElementById(y).style.borderColor="rgb(220,220,220)";
+            }
+            function mouseleave(z){
+                snd.pause()
+                document.getElementById(z).style.borderWidth="4px";
+                document.getElementById(z).style.borderColor="rgb(226, 124, 226)";
+            }
+        </script>
+        </body>
+</html>
